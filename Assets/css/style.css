@@ -1,104 +1,136 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    background-color: rgba(219, 218, 218, 0.781);
-}
 
-.main-header {
-    display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: black;
-    height: 25ex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 10px;
-    box-shadow: 0px 3px 3px 3px
-}
-
-h1 {
-    display: block;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    color: whitesmoke;
-    background-color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
-    font-size: 35px;
-}
-
-img {
-    display: block;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    width: 150px;
-    height: 150px;
-    border: 1px solid black;
-    object-fit: none;
-    position: absolute; top: 0px;
-    object-fit: contain;
-}
-
-#navigation {
-   /* display: block;
-    height: 30px;
-    margin: 30px;
-    padding: 15px;
-    background-color: black;*/
-    list-style: none;
-    font-weight: bold;
-    margin-bottom: 10px;
-    width: 50%;
-    display: block;
-    background-color: black;
-}
+/*Navigation Bar*/
 
 li {
-    float: left;   
+    list-style: none;
 }
 
-a {
-    display: inline-block;
-    padding: 8px;
-    background-color: black;
-    color: white;
-}
-/*.main-header nav {
-    /*background-color: black;
-    float: right;
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;*/
-
-
-/*ul {
+.navbar {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
     background-color: black;
-    padding-inline-start: 150px;
-    justify-content: space-evenly;
+    box-shadow: 0px 2px 2px 2px;
+}
+
+
+h1 {
+    display: flex;
+    color: rgb(243, 239, 239);
+    font-size: 40px;
+    font-weight: bolder;
     
 }
 
-/*.main-header nav ul li {
-    display: flex;
-    margin-left: 25px;
-    margin-right: 25px;
-    background-color: black;
-}*/
-
-a {
-    /*color: white;
-    background-color: black;
-    font-weight: bold;*/
-    /*float: right;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    width: 25%;
-    text-align: right;*/
+.nav-links a {
+    color: rgb(243, 239, 239);
 }
+
+.menu {
+    display: flex;
+    font-size: 20px;
+    padding: 1px;
+    background-color: black;
+   }
+
+   .menu li:hover {
+    background-color: #bcbdbe;
+    border-radius: 5px;
+    transition: 0.3s;
+   }
+
+   .menu li {
+    padding: 5px 14px;
+   }
+/*hero section which includes background image and profile picture*/
+   .hero {
+    background-image: url("../Images/white\ banner.png");
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 4px 5px 2px;
+}
+
+.hero img {
+    display: flex;
+    height: 220px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+/*Body section*/
+body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    background-color: white;
+    color: black;
+}
+
+
+.title {
+    border-right: 5px solid black;
+    text-align: right;
+    padding-right: 40px;
+    min-width: 23%;
+    max-width: 23%;
+}
+
+.title h2 {
+    font-size: 48px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 15px;
+}
+
+.about-me p {
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 1.6;
+    width: 90%;
+}
+
+.my-work {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 15px;
+}
+
+.my-work p {
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 1.6;
+    width: 90%;
+}
+
+.work-grid-container {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.work-grid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.project-label {
+    background-color: lightgray;;
+    color: var(--primary);
+    padding: 10px;
+}
+
 
 @media screen and (max-width: 992px) {
     .header {
