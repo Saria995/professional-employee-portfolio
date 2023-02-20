@@ -5,60 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Saria Elchaar Professional Portfolio</title>
 </head>
 
 <body id="body">
+<!--Navigation/menu bar section-->
         <nav class="navbar">
             <h1>Saria Elchaar</h1>
                 <ul class="nav-links">
                 <div class="menu">
-                        <li><a href="About Me">About Me</a></li>
-                        <li><a href="My Work">Projects</a></li>
-                        <li><a href="Contact-Me">Contact Me</a></li>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#my-work">Projects</a></li>
+                        <li><a href="#contact-me">Contact Me</a></li>
                 </div>
             </ul>
         </nav>
 
+<!--My Profile picture-->
     <section class="hero">
         <div>
             <img src="./Assets/Images/Profile Picture.jpg"  alt="Saria Picture">
         </div>
    </section>
 
+<!--About Me Section-->
      <section id="about-me" class="about-me">
         <div class="title">
             <h2>About Me</h2>
         </div>
         <div>
             <p>
-                I'm Saria and my dream goal is to become a web developer. 
+                I'm Saria and my dream goal is to become a web developer.<br>I'm currently working on creating a responsive website that inline will also be a portfolio in future.
             </p>
         </div>
         </section>
-
+<!--My Work/Projects section which includes several tiles showcasing my projects-->
         <section id="my-work" class="my-work">
             <div class="title">
-                <h2>My Work</h2>
+                <h2>Projects</h2>
             </div>
-            <div class="work-grid-container">
-            <div class="work-grid">
-                <a href="#">Project 1</a>
+            <div class="projects-grid-wrapper">
+            <div class="projects-grid">
+
+                <a href="https://saria995.github.io/Horiseon-Code-Restructure/" target="_blank" class="project horiseon">
                 <div class="project-label">
-                    <h3>Project A</h3>
+                    <h3>Horiseon Code Refactor</h3>
                     <p>HTML/CSS</p>
                 </div>
-
-
-            <article id="Contact details">
-                <h2 id="h2">My Work</h2>
-                <p>
-                    I'm Saria and my dream goal is to become a web developer. 
-                </p>
-        </article>
+                </a>
+                <a href="#" target="_blank" class="project css">
+                    <div class="project-label">
+                        <h3>Employee Portfolio</h3>
+                        <p>HTML/CSS</p>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="project javascript">
+                    <div class="project-label">
+                        <h3>JavaScript Project</h3>
+                        <p>JavaScript</p>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="project four">
+                    <div class="project-label">
+                        <h3>Coding Project 4</h3>
+                        <p>HTML/CSS/JavaScript</p>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="project five">
+                    <div class="project-label">
+                        <h3>Coding Project 5</h3>
+                        <p>HTML/CSS/JavaScript</p>
+                    </div>
+                </a>
+    </section>
+<!--Contact details section which includes links to social media platforms-->
+    <section id="contact-me" class="contact-me">
+        <div class="title">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="social-media">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-google"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+          </div>    
     </section>
 
+<!--footer section-->
+    <footer class="footer">
+        <h2>Made with ❤️️ by Saria Elchaar</h2>
+        <p>
+            &copy; 2023
+        </p>
+      </footer>
    
-
 </body>
 </html>

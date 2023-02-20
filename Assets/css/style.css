@@ -1,3 +1,8 @@
+:root {
+    --whitetext: rgb(243, 239, 239);
+    --position: 50% 15%;
+    --black: black;
+}
 
 /*Navigation Bar*/
 
@@ -11,28 +16,28 @@ li {
     justify-content: space-between;
     position: sticky;
     top: 0px;
-    background-color: black;
+    background-color: var(--black);
     box-shadow: 0px 2px 2px 2px;
 }
 
 
 h1 {
     display: flex;
-    color: rgb(243, 239, 239);
+    color: var(--whitetext);
     font-size: 40px;
     font-weight: bolder;
     
 }
 
 .nav-links a {
-    color: rgb(243, 239, 239);
+    color: var(--whitetext);
 }
 
 .menu {
     display: flex;
     font-size: 20px;
     padding: 1px;
-    background-color: black;
+    background-color: var(--black);
    }
 
    .menu li:hover {
@@ -46,7 +51,8 @@ h1 {
    }
 /*hero section which includes background image and profile picture*/
    .hero {
-    background-image: url("../Images/white\ banner.png");
+   /* background-image: url("../Images/white\ banner.png");*/
+    background-color: rgb(24, 24, 24);
     height: 250px;
     background-size: cover;
     background-position: center;
@@ -60,16 +66,16 @@ h1 {
     display: flex;
     height: 220px;
     border-radius: 8px;
-    border: 1px solid black;
+    border: 1px solid var(--black);
 }
 /*Body section*/
 body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     background-color: white;
-    color: black;
+    color: var(--black);
 }
 
-
+/*About Me section*/
 .title {
     border-right: 5px solid black;
     text-align: right;
@@ -79,12 +85,11 @@ body {
 }
 
 .title h2 {
-    font-size: 48px;
+    font-size: 35px;
 }
 
 .about-me {
     display: flex;
-    justify-content: space-between;
     align-items: stretch;
     padding-top: 15px;
 }
@@ -94,48 +99,152 @@ body {
     padding: 0 30px;
     line-height: 1.6;
     width: 90%;
+    margin-left: 110px;
 }
 
+/*My Work Section*/
 .my-work {
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    
+}
+
+.my-work h2 {
+    color: var(--black);
+}
+
+.projects-grid-wrapper{
+    width: 80%;
+    height: 420px;
+    display: flex;
+    justify-content: center
+}
+
+.projects-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: (4, 1fr);
+    gap: 10px;
+
+}
+
+.project {
+    border: solid;
+    color: var(--black);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    border-radius: 5%;
+}
+
+.project-label {
+    color: var(--black);
+    padding: 10px;
+    width: 280px;
+    text-align: center;
+}
+
+.project:hover {
+    opacity: 1.0;
+}
+
+.horiseon {
+    grid-column: 1/3;
+    grid-row: span 2;
+    background-image: url("../Images/Horiseon\ Image.png");
+}
+
+
+.css {
+    background-image: url("../Images/project\ css\ image.jpg") ;
+    background-position: var (--position)
+}
+
+
+.javascript {
+    background-image: url("../Images/project\ css\ image.jpg") ;
+    background-position: var (--position)
+}
+
+.four {
+    background-image: url("../Images/project\ css\ image.jpg") ;
+    background-position: var (--position)
+}
+
+.five {
+    background-image: url("../Images/project\ css\ image.jpg") ;
+    background-position: var (--position)
+}
+
+/*Contact-me Section*/
+
+.contact-me {
+    display: flex;
     align-items: stretch;
     padding-top: 15px;
 }
 
-.my-work p {
-    font-size: 20px;
-    padding: 0 30px;
-    line-height: 1.6;
-    width: 90%;
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+}
+  
+.fa:hover {
+	opacity: 0.7;
 }
 
-.work-grid-container {
-    width: 80%;
-    height: 500px;
+/*Social media links*/
+
+.social-media {
+    width: 18%;
+    height: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-left: 8%;
+}  
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+  
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+.footer {
+    clear: both;
+    text-align: center;
+    background-color: rgb(24, 24, 24);
+    color: var(--whitetext);
 }
 
-.work-grid {
-    width: 70%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 10px;
+.footer h2 {
+    font-size: 20px;
 }
-
-.project-label {
-    background-color: lightgray;;
-    color: var(--primary);
-    padding: 10px;
-}
-
 
 @media screen and (max-width: 992px) {
-    .header {
-        background-color: black;
+    .hero {
+        padding: 20px;
     }
+   
 }
 
 @media screen and (max-width: 768px) {
