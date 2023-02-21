@@ -4,7 +4,7 @@
     --black: black;
 }
 
-/*Navigation Bar*/
+/*Navigation Bar and Menu links*/
 
 li {
     list-style: none;
@@ -68,7 +68,7 @@ h1 {
     border-radius: 8px;
     border: 1px solid var(--black);
 }
-/*Body section*/
+/*General styling for Body section*/
 body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     background-color: white;
@@ -240,17 +240,83 @@ body {
     font-size: 20px;
 }
 
-@media screen and (max-width: 992px) {
-    .hero {
-        padding: 20px;
-    }
-   
-}
 
 @media screen and (max-width: 768px) {
-    background-color: black;
-}
 
-@media screen and (max-width: 576px) {
-    background-color: black;
+    .navbar {
+        flex-direction: row;
+        display: flex;
+    }
+
+    .menu {
+        width: 87%;
+        text-align: center;
+    }
+
+    .menu li {
+        width: auto;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    
+    .nav-links a {
+        display: flex;
+        font-size: 16px;
+    }
+    
+    .hero {
+       height: 160px;
+    }
+
+    .hero img {
+        height: 150px;
+    }
+
+    .title {
+        border-bottom: 5px solid var(--pop);
+        text-align: center;
+        min-width: 24%;
+    }
+
+    .title h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .about-me p {
+        font-size: 16px;
+        line-height: 1.2;
+        margin: 0%;
+        margin-top: 10%;
+    }
+
+    .my-work {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .my-work .project {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        font-size: 10px;
+        flex-direction: column;
+    }
+
+    .projects-grid-wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .projects-grid {
+        width: 80%;
+    }
+    
+
+    footer {
+        flex-direction: column;
+    }
 }
