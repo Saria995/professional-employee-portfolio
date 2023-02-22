@@ -91,7 +91,8 @@ body {
 .about-me {
     display: flex;
     align-items: stretch;
-    padding-top: 15px;
+    padding-top: 30px;
+    margin-top: 20px;
 }
 
 .about-me p {
@@ -157,13 +158,14 @@ body {
     grid-template-columns: auto auto;
     gap: 10px;
     background-color: rgb(222, 219, 219);
-    padding: 10px;
-    width: 60%;
+    padding: 60px;
+    width: 0%;
   }
   
   .grid-container > div {
-    padding: 20px 0;
-    font-size: 18px;
+    padding: 10px 0;
+    font-size: 15px;
+    text-align: center;
   }
   
   .item1 {
@@ -256,6 +258,7 @@ body {
     font-size: 20px;
 }
 
+/*REPONSIVE SMALLER SCREEN SECTION*/
 
 @media screen and (max-width: 768px) {
 
